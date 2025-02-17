@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "DeepseekRAG.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "DeepseekRAG.py"
+    }
+  ]
+}
